@@ -19,7 +19,8 @@ def json_response():
     return resp
 '''
 # Calculation for factorials
-def factorial():
+@app.route('/factoral/')
+def factoral_response():
     n = int(input("enter a number:"))
     factorial = 1
     if (n == 0):
@@ -30,3 +31,24 @@ def factorial():
        for i in range(1,n + 1):
            factorial = factorial*i
        print("The factorial of number:",factorial)  
+    '''@app.route('/fibonacci/')
+
+def fibonacci_response():
+    num = input('Input: ')
+    return "Output: {resp}"
+'''
+    
+@app.route('/is-prime/')
+def prime_response():
+    num = int(input('Input: '))
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                resp = False
+                break
+            else:
+                resp = True
+    else:
+        resp = False
+    
+    return "{num} is Prime: {resp}"
