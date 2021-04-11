@@ -1,4 +1,8 @@
-# GroupProject5API
+# GroupProject7: Building and testing API clients
+-Building a command line interface that interacts with your API
+-Writing an automated testing suite so you can modify your API while still guaranteeing that other clients won’t break
+
+(From the commands instructed in Group Project 5)
 In this project, we will allow the user to:
 1. Return the MD5 hash of a user input string
 2. Return the factorial of a user input integer
